@@ -133,152 +133,142 @@ window.onload = function() {
 
 
 
-    <!-- course -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+    /* Global Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+  
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    /* Testimonials Section */
+    .testimonials {
+      text-align: center;
+      padding: 50px 0;
+    }
+    
+    .testimonials h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    
+    .testimonials p {
+      font-size: 18px;
+    }
+    
+    /* Courses Section */
+    .course-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    
+    .course-box {
+      flex: 1 1 300px;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    
+    .course-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .course-box .icon {
+      font-size: 50px;
+      padding-left: 21.5px;
+      color: #fff;
+      background-color: #FF1493;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      margin: 20px auto;
+    }
+    
+    .course-box:hover .icon {
+      transform: rotate(360deg);
+    }
+    
+    .course-box .content {
+      padding: 20px;
+    }
+    
+    .course-box h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .course-box p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    
+    .button {
+      display: inline-block;
+      padding: 10px 25px;
+      background: #FF1493;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+    
+    .button:hover {
+      background: #FF0066;
+    }
+    </style>
+    </head>
+    <body>
+    
     <section class="testimonials">
-      <h1>Our Services </h1>
-      <p class="p34">Here are the services we provide in our community!</p>
-    <div class="course23" id="course">
-      <div class="containerc23">
-          <div class="box23">
+      <div class="container">
+        <h1>Our Services</h1>
+        <p>Here are the services we provide in our community!</p>
+      </div>
+    </section>
+    
+    <section class="courses">
+      <div class="container">
+        <div class="course-container">
+          <div class="course-box">
             <div class="icon"><i class="fas fa-desktop"></i></div>
             <div class="content">
               <h3>Trading Class</h3>
               <p>Master the art of trading with our comprehensive online class. Learn essential strategies, techniques, and insights to navigate the financial markets successfully, all from the comfort of your own home.</p>
-              <br><br>
-              <p>Course Fees : 4999/-</p>
-              <a class="button23" href="#register">Register</a>
+              <p>Course Fees: 4999/-</p>
+              <a class="button" href="#register">Register</a>
+            </div>
           </div>
-          </div>
-        </div>
-        <div class="containerc23">
-          <div class="box23">
+          <div class="course-box">
             <div class="icon"><i class="fas fa-code"></i></div>
             <div class="content">
               <h3>Web Development</h3>
               <p>Enhance your online presence with our Web Development service. Also, we offer a Full Stack Development Course at the lowest price, complete with 30 days of comprehensive material guidance and support.</p>
-              <br><br>
-              <p>Course Fees : 3999/-</p>
-              <a class="button23" href="https://tinobritty.web.app/">Click Here !</a>
-  
+              <p>Course Fees: 3999/-</p>
+              <a class="button" href="https://tinobritty.web.app/">Click Here!</a>
             </div>
           </div>
         </div>
       </div>
-      <style>
-        @import url('https://fonts.googleapis.com/css?family=Roboto&subset=latin-ext');
-      
-        .course23 {
-          margin: 0;
-          padding: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          min-height: 100vh;
-          font-family: 'Roboto', sans-serif;
-        }
-      
-        .containerc23 {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center; /* Center items on mobile */
-          align-items: center; /* Center items on mobile */
-        }
-      
-        .containerc23 .box23 {
-          position: relative;
-          width: calc(100% - 20px); /* Adjusting width for mobile */
-          max-width: 350px; /* Limiting max width for larger screens */
-          padding: 20px; /* Adjusting padding for mobile */
-          background: linear-gradient(to bottom, #E4E5EC, #FCDAEA);
-          box-shadow: 0 15px 25px rgba(0, 0, 0, .1);
-          border-radius: 15px;
-          margin: 10px; /* Adjusting margin for mobile */
-          box-sizing: border-box;
-          overflow: hidden;
-          text-align: center;
-        }
-      
-        .containerc23 .box23:before {
-          content: '';
-          width: 50%;
-          height: 100%;
-          position: absolute;
-          top: 0;
-          left: 0;
-          background: rgba(255, 255, 255, .2);
-          z-index: 2;
-          pointer-events: none;
-          text-align: center;
-        }
-      
-        .containerc23 .box23 .icon {
-          position: relative;
-          width: 80px;
-          height: 80px;
-          color: #fff;
-          background: #FF1493;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin: 0 auto 20px auto; /* Adjusting margin for mobile */
-          border-radius: 20%;
-          font-size: 50px;
-          font-weight: normal;
-          transition: 0.5s; /* Adjusting transition duration for mobile */
-          padding: 10px;
-        }
-      
-        .containerc23 .box23 .icon i {
-          padding: 12px;
-        }
-      
-        .containerc23 .box23 .icon {
-          box-shadow: 0 0 0 0 #76D7C4;
-          background: #76D7C4;
-        }
-      
-        .containerc23 .box23:hover .icon {
-          box-shadow: 0 0 0 200px #76D7C4; /* Adjusting shadow size for mobile */
-        }
-      
-        .containerc23 .box23 .content {
-          position: relative;
-          z-index: 1;
-          transition: 0.5s; /* Adjusting transition duration for mobile */
-        }
-      
-        .containerc23 .box23:hover .content {
-          color: #fff;
-        }
-      
-        .containerc23 .box23 .content h3 {
-          font-size: 18px; /* Adjusting font size for mobile */
-          margin: 10px 0;
-          padding: 0;
-          text-align: center;
-        }
-      
-        .containerc23 .box23 .content p {
-          margin: 0;
-          padding: 0;
-          text-align: center;
-        }
-      
-        .button23 {
-          display: inline-block;
-          padding: 10px 20px; /* Adjusting padding for mobile */
-          background: #fff;
-          border-radius: 10px;
-          text-decoration: none;
-          color: #000;
-          font-weight: 500;
-          margin-top: 20px;
-          box-shadow: 5px 2px 5px rgba(0, 0, 0, .2);
-          border: 1px solid green;
-        }
-      </style>
-      
-  </body>
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    
  
 
     <!-- testimonials -->
